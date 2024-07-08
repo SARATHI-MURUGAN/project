@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+  ul{
+    list-style: none;
+}
+body , html{
+    overflow-x: hidden;
+}
+.active{
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+/* navbar */
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: rgb(240, 149, 149);
+}
+
+.navlinks{
+    display: flex;
+    align-items: center;
+}
+.navlinks li{
+    margin: 0 30px;
+    font-size: 2vmin;
+      
+} 
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(image/BG.jpg);
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.header-content{
+    color: rgb(26, 23, 220);
+    margin-bottom: 150px;
+    text-align: center;
+}
+.header-content h2{
+    font-size: 4vmin;
+}
+.line{
+    height: 0.5vmin;
+    width: 30vmin;
+    background-color: red;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px ;    
+}
+.but{
+    font-size: 2vmin;
+    padding: 8px 15px;
+    color: rgb(237, 233, 233);
+    border: 1px solid red;
+    background-color: red;
+    border-radius: 10px;
+}
+.menubtn{
+    display: none;
+}
+/* section */
+section{
+    width: 90%;
+    margin: 7vmin;
+    /* background-color: aqua; */
+}
+.up{
+    font-size: 4vmin;
+    text-align: center;
+}
+.events .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 5vmin;
+}
+.row .col img{
+    width: 80%;
+}
+.row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.col h4{
+    font-size: 3vmin;
+    margin: 20px auto;
+    color: rgb(153, 213, 241);
+}
+.col p{
+    width: 80%;
+    padding: 10px;
+    font-size: 2vmin;
+}
+.explore{
+    width: 100%;
+    margin-left: 0;
+    height:80vh;   
+    background-image: url(image/hike1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.explore h1 {
+   position: relative;
+   top: 25vmin;
+   left: 20vmin;
+   font-size: 5vmin;
+}
+.explore .nine{
+    position: relative;
+    top: 25vmin;
+    left: 23vmin;
+    background-color: red;
+    width: 30vmin;
+    height: 0.3vh;
+    margin-top: 2vmin;
+    margin-bottom: 2vmin;
+}
+.explore p{
+    position: relative;
+   top: 25vmin;
+   left: 20vmin;
+   font-size: 2vmin;
+   width: 60%;
+}
+.explore .but{
+    position: relative;
+    top: 30vmin;
+    left:20vmin;
+}
+.tour .hell{
+   float:left;
+ }
+ .tour .col h1{
+    font-size:7vmin;
+    margin-top: 8vmin;
+    color: rgb(225, 225, 99);
+    margin-left: 8vmin;
+ }
+ .tour .line{
+    position: relative;
+    right: 90px;
+ }
+ .tour .col p{
+    font-size: 2vmin;
+    width: 80%;
+ }
+
+ .tour .col{
+    width: 50%;
+ }
+ .tour  .imagegal img{
+    width: 250px;
+    margin: 10px;
+ }
+ footer{
+    background-color: rgb(97, 90, 90);
+    height: 5vh;
+    width: 100%;
+ }
+/* mobile device */
+@media only screen and (max-width:850px) {
+    .navbar{
+        padding: 0;
+        /* display: none; */
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        font-size: 4vmin;
+    }
+    .navlinks{
+       display: none;
+    }
+    .navlinks li{
+        margin: 30px auto;
+        font-size: 2vmin;      
+    }
+    .menubtn{
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        cursor: pointer;
+        height: 6vh;
+    }
+    .mobilemenu{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: rgb(144, 144, 255);
+        transition:all 0.6s ease;
+        border-bottom-right-radius:30vh ;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .row .col{
+        margin: 20px auto;
+    } 
+    .col img{
+        max-width: 90%;
+    }
+    .explore{
+        width: 100%;
+    }
+    .tour .hell{
+        float:none;
+    }
+
+    .tour .line{
+        position: relative;
+        right: 0;
+     }
+    .imagegal{
+        justify-content: center;
+        align-items: center;
+    }
+    .imagegal img{
+        width: 90%;
+    }
+    .footer{
+        padding: 10px;
+    }
+}
